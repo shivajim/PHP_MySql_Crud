@@ -8,8 +8,8 @@
 	$cust_id = $_GET['id'];
 
 	$query = "select * from customers where cust_id = '".$cust_id."'";
-	$result = mysqli_query($connect, $query);
 	
+	$result = mysqli_query($connect, $query);
 	while ($row  = mysqli_fetch_array($result)){
 		print_r("Database".$firstName);
 
